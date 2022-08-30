@@ -57,10 +57,11 @@ nav {
 
 .dropdown {
   float: right;
-  overflow: hidden;
   font-size: 14px;
 }
-
+.dropcol{
+  color: rgb(255, 255, 255) !important;
+}
 .dropdown .dropbtn {
   font-size: 14px;
   font-weight: 550;
@@ -212,7 +213,13 @@ nav {
   font-weight: bold;
   color: rgb(255, 255, 255);
   margin-top: -10px;
+  text-decoration: none;
 
+}
+.btn12
+{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 
 .btn {
@@ -262,6 +269,7 @@ ul li a:hover {
 .green-button {
   text-align: center;
   margin-top: 50px;
+  text-decoration: none;
 }
 
 .head1 {

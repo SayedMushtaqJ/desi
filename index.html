@@ -16,6 +16,7 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+   
 </head>
 
 <body>
@@ -35,16 +36,16 @@
                             <li><a href="#about" class="active-title">Home</a></li>
                             <li><a href="#contact">Services</a></li>
                             <li><a href="#news">Project</a></li>
-                            <div class="dropdown">
-                                <button class="dropbtn">Drop
-                                    <i class="fa fa-caret-down"></i>
-                                </button>
-                                <div class="dropdown-content1">
-                                    <a href="#">Link 1</a>
-                                    <a href="#">Link 2</a>
-                                    <a href="#">Link 3</a>
-                                </div>
-                            </div>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle dropcol" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Drop
+                                </a>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                              </li>
                             <li><a href="#news">contact</a></li>
                             <li class="fb-li"><a href="#"><i class="fa-brands fa-facebook-f face"></i></a></li>
                             <li><a href="#" class="twitter-li"><i class="fa-brands fa-twitter twit"></i></a></li>
@@ -56,7 +57,7 @@
             </div>
             <h1 class="head">Creative Social Media<br> Digital Agency</h1>
             <div class="green-button">
-                <button class="homebtn">Discover</button>
+                <button class="homebtn"><a href="#" class="btn12">Discover</a></button>
             </div>
         </div>
         </div>
