@@ -26,19 +26,24 @@
             <video class="headervideo" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
                 <source src="./img/header-background-video.mp4" type="video/mp4">
             </video>
-            <div class="nav-div">
+            <nav class="nav-div" role='navigation'>
+                <!-- <div class="total-nav"> -->
                 <div class="topnav" id="myTopnav">
                     <span><i class="fa-solid fa-rocket rocket"></i></span>
                     <span class="title">Desi</span>
                 </div>
-                <div>
-                    <nav>
-                        <ul>
-                            <li><a href="#about" class="active-title">Home</a></li>
-                            <li><a href="#contact">Services</a></li>
-                            <li><a href="#news">Project</a></li>
-                            <li>
-                                <div class="dropdown">
+                <div id="menuToggle">
+                    <input class="checkbox" type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        <li><a href="#about" class="active-title">Home</a></li>
+                        <li><a href="#contact">Services</a></li>
+                        <li><a href="#news">Project</a></li>
+                        <li  class="dropdown">
+                            <a href="#news">
+                                <div class="nav-dropbtn">
                                     <button class="dropbtn">Drop <i class="fa-solid fa-angle-down"></i></button>
                                     <div class="dropdown-content">
                                         <a href="#">Link 1</a>
@@ -46,16 +51,33 @@
                                         <a href="#">Link 3</a>
                                     </div>
                                 </div>
-                            </li>
-                            <li><a href="#news">Contact</a></li>
-                            <li class="fb-li"><a href="#"><i class="fa-brands fa-facebook-f face"></i></a></li>
-                            <li><a href="#" class="twitter-li"><i class="fa-brands fa-twitter twit"></i></a></li>
+                            </a>
+                        </li>
+                        <li><a href="#news">Contact</a></li>
+                        <li class="fb-li"><a href="#"><i class="fa-brands fa-facebook-f face"></i></a></li>
+                        <li><a href="#" class="twitter-li"><i class="fa-brands fa-twitter twit"></i></a></li>
+                    </ul>
 
-
-                        </ul>
-                    </nav>
                 </div>
-            </div>
+                <!-- </div> -->
+            </nav>
+
+            <!-- <nav role='navigation'>
+                <div id="menuToggle">
+                  <input type="checkbox" />
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <ul id="menu">
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>About</li></a>
+                    <a href="#"><li>Info</li></a>
+                    <a href="#"><li>Contact</li></a>
+                    <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+                  </ul>
+                </div>
+              </nav> -->
+
             <h1 class="head">Creative Social Media<br> Digital Agency</h1>
             <div class="green-button">
                 <a href="#"><button class="homebtn">Discover</button></a>
@@ -66,12 +88,14 @@
 
     <div class="media">
         <h2 class="media1">Complete social media services</h2>
-        <p class="media-p">Increasing impression intrested expressionhe my at.Respect invited request charmed me <br>
-            warrant to .Expect no more pretty as do through through so genius afrid cousin </p>
+        <p class="media-p">Increasing impression intrested <br>expressionhe my at.Respect invited request charmed me
+            <br>
+            warrant to .
+        </p>
     </div>
 
 
-    <div class="camara1">
+    <div class="camara">
 
         <div class="cam-div">
             <i class="fa-solid fa-camera cam-icon"></i>
@@ -92,8 +116,8 @@
     </div>
 
     <table class="work">
-        <tr>
-            <td><img class="work-img" src="img/details-background.jpg"></td>
+        <tr class="work-row">
+            <td class="work-image"><img class="work-img" src="img/details-background.jpg"></td>
             <td class="work-text">
                 <h2 class="work-hed1">Why work with Us</h2>
                 <p class="work-p">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in
@@ -101,18 +125,21 @@
                     piece of
                     classical Latin literature from 45 BC, making it over 2000 years old.</p><br>
 
-                <p><span class="work-hed2">EXPERIANCE - </span>we have the 10 years of experiance in
-                    desigining.<br>
-                <p><span class="work-hed2">PASSION - </span>we have the 10 years of experiance in
-                    desigining.</p><br>
-                <p><span class="work-hed2">CREATIVITY - </span>we have the 10 years of experiance in
-                    desigining.</p>
+                <div class="work-p2">
+                    <p><span class="work-hed2">EXPERIANCE - </span>we have the 10 years of experiance in
+                        desigining.<br>
+                    <p><span class="work-hed2">PASSION - </span>we have the 10 years of experiance in
+                        desigining.</p><br>
+                    <p><span class="work-hed2">CREATIVITY - </span>we have the 10 years of experiance in
+                        desigining.</p>
+                </div>
             </td>
         </tr>
     </table>
+
     <table class="photo">
-        <tr>
-            <td><img class="photo-img" src="img/services-1.jpg"></td>
+        <tr class="photo-row">
+            <td><img class="photo-img" src="img/services-1.jpg"></td><br>
             <td class="photo-text">
                 <h2 class="photo-hed">Photo shooting and<br>image editing service</h2><br>
                 <p>we have the 10 years of experiance<br> in
@@ -126,7 +153,7 @@
         </tr>
     </table>
     <table class="photo">
-        <tr>
+        <tr class="photo-row">
             <td><img class="photo-img" src="img/services-2.jpg"></td>
             <td class="photo-text">
                 <h2 class="photo-hed">Video Production and<br> editing service</h2><br>
@@ -141,7 +168,7 @@
         </tr>
     </table>
     <table class="photo">
-        <tr>
+        <tr class="photo-row">
             <td><img class="photo-img" src="img/services-3.jpg"></td>
             <td class="photo-text">
                 <h2 class="photo-hed">Digital illestration and<br>animation service</h2><br>
@@ -159,10 +186,10 @@
         <h2 class="project-hed">Projects That We're Proude Of</h2>
 
         <div class="project-btn">
-            <div><a href="#" class="button-active">SHOW ALL</a></div>
-            <div><a href="#" class="button">BUSINESS</a></div>
-            <div><a href="#" class="button">FINANCE</a></div>
-            <div><a href="#" class="button">SOFTWARE</a></div>
+            <div class="button-btn"><a href="#" class="button-active">SHOW ALL</a></div>
+            <div class="button-btn"><a href="#" class="button">BUSINESS</a></div>
+            <div class="button-btn"><a href="#" class="button">FINANCE</a></div>
+            <div class="button-btn"><a href="#" class="button">SOFTWARE</a></div>
         </div>
 
 
