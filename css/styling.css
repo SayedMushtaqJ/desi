@@ -2542,6 +2542,7 @@ ul li a:hover {
 
 ul {
   display: block;
+  width: 100%;
 }
 
 ul li {
@@ -2551,6 +2552,7 @@ ul li {
 ul li a {
   display: block;
   text-align: center;
+  
 }
 
 .nav-div {
@@ -2562,9 +2564,7 @@ ul li a {
   font-weight: 500;
 }
 
-ul li a:hover {
-  /* display: none; */
-}
+
 .topnav {
   overflow: hidden;
   background-color: transparent;
@@ -2584,20 +2584,18 @@ body
 {
   margin: 0;
   padding: 0;
-  
-  /* make it look decent enough */
   background: #232323;
   color: #cdcdcd;
   font-family: "Avenir Next", "Avenir", sans-serif;
   
-  overflow-x: hidden; /* needed because hiding the menu on the right side is not perfect,  */
+  overflow-x: hidden; 
 }
 
 a
 {
   text-decoration: none;
   color: #232323;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   transition: color 0.3s ease;
 }
 
@@ -2669,20 +2667,15 @@ a:hover
   transform-origin: 0% 100%;
 }
 
-/* 
- * Transform all the slices of hamburger
- * into a crossmark.
- */
-#menuToggle input:checked ~ ul
+#menuToggle input:checked ~ span
 {
-  transform: none;
+  /* transform: none; */
     opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #fafafa;
     display: block;
 }
 
-/*
- * But let's hide the middle one.
- */
 #menuToggle input:checked ~ span:nth-last-child(3)
 {
   opacity: 0;
@@ -2705,11 +2698,11 @@ a:hover
 #menu
 {
   position: absolute;
-  width: 350px;
+  width: 400px;
   margin: -80px 0 0 0;
   padding: 50px;
   padding-top: 125px;
-  right: -5px;
+  right: -55px;
   float: right;
   background: #000000;
   list-style-type: none;
@@ -2721,25 +2714,28 @@ a:hover
   
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
-ul#menu
+span#menu
 {
   display: none;
 }
+
 #menu li
 {
   padding: 10px 0;
   font-size: 22px;
+  
 }
 
-/*
- * And let's fade it in from the left
- */
 #menuToggle input:checked ~ ul
 {
   transform: none;
   opacity: 1;
+  display: block;
 }
-
+ul#menu
+{
+  display: none;
+}
 
 .dropbtn {
   background-color: transparent;
@@ -2790,10 +2786,7 @@ ul#menu
 .dropdown:hover .dropbtn {
   background-color: transparent;
 }
-
-
-
-  header {
+ header {
     position: relative;
     width: auto;
     height: auto;
@@ -2917,6 +2910,7 @@ ul#menu
   .photo {
     margin-top: 60px;
     margin-left: 60px;
+    /* justify-content: center; */
   }
 
   .photo-img {
@@ -2958,7 +2952,6 @@ ul#menu
   .photo-row {
     display: flex;
     flex-direction: column;
-    /* text-align: center; */
   }
 
   .project-hed {
@@ -3256,7 +3249,7 @@ ul#menu
     position: relative;
     background-color: black;
     height: 760px;
-    width: 100%;
+    width: auto;
     overflow: hidden;
   }
 
@@ -3306,7 +3299,7 @@ ul#menu
     background-color: hsl(209deg 23% 21%);
     color: rgb(255, 255, 255);
     height: 45px;
-    width: 370px;
+    width: 350px;
     margin-bottom: 10px;
     padding-left: 30px;
     border-radius: 8px;
@@ -3321,7 +3314,7 @@ ul#menu
     color: rgb(255, 255, 255);
     /* font-weight: 600; */
     height: 230px;
-    width: 370px;
+    width: 350px;
     border-radius: 8px;
     padding-left: 30px;
     padding-top: 20px;
