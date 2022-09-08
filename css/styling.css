@@ -65,15 +65,19 @@ nav {
   background-color: transparent;
   color: rgb(255, 255, 255);
   padding: 10px 10px;
-  font-size: 14px;
+  font-size: 15px;
   margin-top: -35px;
-  margin-right: -10px;
-  margin-left: -10px;
+  /* margin-right: -10px;
+  margin-left: -10px; */
   border: none;
   cursor: pointer;
   font-weight: 500;
 }
-
+.drop-icon
+{
+font-size: 10px;
+margin-top: -15px;
+}
 .dropdown {
   position: relative;
   display: inline-block;
@@ -163,6 +167,7 @@ ul li a {
   padding-top: 28px;
   font-size: 15px;
   font-weight: 500;
+  margin-right: 30px;
 }
 
 ul li a:hover {
@@ -186,10 +191,10 @@ ul li a:hover {
 
 .homebtn {
   background-color: hsl(87deg 64% 46%);
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 48px;
+  padding-right: 48px;
   border: none;
   border-radius: 5%;
   font-size: 17px;
@@ -229,7 +234,7 @@ ul li a:hover {
 
 .media {
   text-align: center;
-  margin-top: 380px;
+  margin-top: 350px;
 }
 
 .media1 {
@@ -277,19 +282,25 @@ ul li a:hover {
 }
 
 .cam-p {
-  padding-top: 20px;
+  padding-top: 4px;
 }
 
 /* camar ends */
 /* work starts  */
 .work {
   margin-top: 120px;
+  
 }
-
+.work-row
+{
+  display: flex;
+  flex-direction: row;
+}
 .work-img {
   height: 700px;
-  width: 840px;
-  margin-left: -165px;
+  width: 1050px;
+  margin-left: -200px;
+  /* margin-right: -50px; */
 }
 
 .work-text {
@@ -299,8 +310,10 @@ ul li a:hover {
   padding-top: 130px;
   padding-bottom: 120px;
   margin-bottom: 50px;
-  margin-top: 100px;
+  /* margin-top: 100px; */
+  margin-left: -170px;
   width: 50%;
+  height: 700px;
 }
 
 .work-hed1 {
@@ -312,7 +325,10 @@ ul li a:hover {
   margin-top: 30px;
   font-size: 16px;
 }
-
+.work-p2
+{
+  font-size: 110%;
+}
 .work-hed2 {
   font-size: 15px;
   font-weight: 700;
@@ -529,7 +545,6 @@ ul li a:hover {
   background-color: hsl(220deg 60% 98%);
 
 }
-
 .num-row {
   display: flex;
   flex-direction: row;
@@ -616,7 +631,8 @@ ul li a:hover {
   width: 800px;
   margin-bottom: 20px;
   padding-left: 30px;
-  border-radius: 8px;
+  border-radius: 5px;
+  border-color: transparent;
 }
 
 .form::placeholder {
@@ -629,10 +645,11 @@ ul li a:hover {
   /* font-weight: 600; */
   height: 230px;
   width: 800px;
-  border-radius: 8px;
+  border-radius: 5px;
   padding-left: 30px;
   padding-top: 20px;
   margin-bottom: 20px;
+  border-color: transparent;
   /* padding-top: -100px; */
 }
 
@@ -644,16 +661,19 @@ ul li a:hover {
   background-color: hsl(87deg 64% 46%);
   border: 1px solid hsl(87deg 64% 46%);
   width: 800px;
-  height: 45px;
+  height: 50px;
   text-align: center;
-  border-radius: 8px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
 }
 
 .button1 a {
   color: rgb(255, 255, 255);
   text-decoration: none;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 53px;
 }
 
 
@@ -795,12 +815,53 @@ ul li a:hover {
     margin-top: 300px;
   }
 
+  .work {
+    margin-top: 120px;
+    
+  }
+  .work-row
+  {
+    display: flex;
+    flex-direction: row;
+  }
   .work-img {
     height: 700px;
-    width: 780px;
-    margin-left: -160px;
+    width: 1000px;
+    margin-left: -200px;
+    /* margin-right: -50px; */
   }
-
+  
+  .work-text {
+    background-color: hsl(220deg 60% 98%);
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 130px;
+    padding-bottom: 120px;
+    margin-bottom: 50px;
+    /* margin-top: 100px; */
+    margin-left: -170px;
+    width: 50%;
+    height: 700px;
+  }
+  
+  .work-hed1 {
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .work-p {
+    margin-top: 30px;
+    font-size: 16px;
+  }
+  .work-p2
+  {
+    font-size: 110%;
+  }
+  .work-hed2 {
+    font-size: 15px;
+    font-weight: 700;
+    color: hsl(206deg 4% 34%);
+  }
   .photo {
     margin-top: 140px;
     margin-left: 140px;
@@ -1316,10 +1377,13 @@ ul li a:hover {
 
   .work-img {
     height: 600px;
-    width: 730px;
+    width: 740px;
     margin-left: -135px;
   }
-
+  /* .work-row
+  {
+    margin-left: -70px;
+  } */
   .work-text {
     background-color: hsl(220deg 60% 98%);
     padding-left: 80px;
@@ -1327,8 +1391,9 @@ ul li a:hover {
     padding-top: 80px;
     padding-bottom: 80px;
     margin-bottom: 50px;
-    margin-top: 80px;
-    width: 50%;
+    margin-left: -120px;
+    width:auto ;
+    height: 600px;
   }
 
   .work-hed1 {
@@ -1992,7 +2057,7 @@ ul li a:hover {
 
   .media {
     text-align: center;
-    margin-top: 250px;
+    margin-top: 100px;
   }
 
   .media1 {
@@ -2016,7 +2081,7 @@ ul li a:hover {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-left: 100px;
+    /* padding-left: 100px; */
     margin-top: 0px;
   }
 
@@ -2029,10 +2094,7 @@ ul li a:hover {
   }
 
   .cam-div {
-    text-align: center;
-    margin-right: -25px;
-    /* padding-right: 40px; */
-
+    padding: 10px;
   }
 
   .cam-h {
@@ -2057,11 +2119,9 @@ ul li a:hover {
     padding-left: 60px;
     padding-right: 60px;
     padding-top: 60px;
-    padding-bottom: 50px;
-    margin-bottom: 35px;
-    margin-top: 50px;
-    width: 60%;
-    /* font-size: 60%; */
+    width: 100%;
+    height: 490px;
+    margin-left: -70px;
   }
 
   .work-hed1 {
@@ -2125,7 +2185,6 @@ ul li a:hover {
     font-weight: 600;
     font-size: 13px;
   }
-
   .project-hed {
     text-align: center;
     margin-top: 100px;
@@ -2205,7 +2264,7 @@ ul li a:hover {
     border-radius: 3%;
     margin-bottom: 15px;
     width: 240px;
-    height: 90px;
+    height: 160px;
   }
 
   .project-hed1 {
@@ -2828,19 +2887,19 @@ ul#menu
   
   .media {
     text-align: center;
-    margin-top: 400px;
+    margin-top: 160px !important;
   }
 
   .media1 {
     font-weight: 600;
     color: black;
     font-family: 'Poppins', sans-serif;
-    margin-top: 200px;
+    margin-top: 100px;
     font-size: 20px;
   }
 
   .media-p {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 50px;
     font-size: 12px;
   }
@@ -2848,11 +2907,11 @@ ul#menu
   .work-row {
     display: flex;
     flex-direction: column;
-    /* margin-left: 70px; */
+    text-align: center !important;
   }
 
   .work {
-    margin-top: 30px;
+    /* margin-top: 30px; */
   }
 
   .work-img {
@@ -2864,13 +2923,10 @@ ul#menu
   .work-text {
     background-color: hsl(220deg 60% 98%);
     padding-left: 30px;
-    /* padding-right: 60px; */
-    padding-top: 60px;
-    padding-bottom: 50px;
-    /* margin-bottom: 55px; */
-    /* margin-top: 50px; */
     width: 100%;
-    /* font-size: 60%; */
+    height: 500px;
+    margin-left: 0px;
+    padding-top: 80px;
   }
 
   .work-hed1 {
@@ -2882,6 +2938,7 @@ ul#menu
   .work-p {
     margin-top: 20px;
     font-size: 13px !important;
+    /* margin-bottom: 10px; */
   }
 
   .work-p2 {
@@ -2906,24 +2963,23 @@ ul#menu
   ul#menu {
     padding: 0px;
   }
-
-  .photo {
-    margin-top: 60px;
-    margin-left: 60px;
-    /* justify-content: center; */
+  .photo-div
+  {
+    justify-content: center !important;
   }
+  .photo {
+    margin: 0 auto;
+  } 
 
   .photo-img {
-    height: 135px;
-    width: auto;
+    height: auto;
+    width: 280px;
     border-radius: 2%;
-    text-align: center;
-  }
-
+}
   .photo-text {
     /* padding-left: 100px; */
     margin-top: 70px;
-    font-size: 75%;
+    font-size: 85%;
   }
 
   .photo-hed {
@@ -2952,6 +3008,7 @@ ul#menu
   .photo-row {
     display: flex;
     flex-direction: column;
+    justify-content: center !important;
   }
 
   .project-hed {
@@ -2985,14 +3042,14 @@ ul#menu
 
   .button {
     background-color: rgb(255, 255, 255);
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-right: 14px;
-    padding-left: 14px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 15px;
+    padding-left: 15px;
     margin-top: 40px;
     font-weight: 600;
     color: rgb(0, 0, 0);
-    font-size: 11px !important;
+    font-size: 13px !important;
     text-decoration: none;
     /* margin-right: 20px; */
   }
@@ -3005,13 +3062,13 @@ ul#menu
   .button-active {
     color: rgb(255, 255, 255);
     background-color: hsl(87deg 64% 46%);
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-right: 14px;
-    padding-left: 14px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 15px;
+    padding-left: 15px;
     margin-top: 20px;
     font-weight: 600;
-    font-size: 11px !important;
+    font-size: 13px !important;
     text-decoration: none;
     font-weight: 600;
   }
@@ -3037,8 +3094,8 @@ ul#menu
   .project-img {
     border-radius: 3%;
     margin-bottom: 20px;
-    width: 230px;
-    height: 210px;
+    width: 310px;
+    height: 240px;
   }
 
   .project-hed1 {
@@ -3111,28 +3168,33 @@ ul#menu
     font-family: 'Noto Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
   }
-
   .number {
     background-color: hsl(220deg 60% 98%);
-    width: auto;
-
+  
   }
-
   .num-row {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    /* margin-left: 50px;
-    margin-top: -30px; */
+    margin-left: 50px;
   }
-
+  
   .num-col {
-    /* margin-right: 50px; */
+    margin-right: 70px;
     text-align: center;
-    margin-top: 0px;
-    /* margin-bottom: 50px; */
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
-
+  
+  .num-p {
+    font-size: 14px;
+  }
+  
+  .num {
+    color: hsl(87deg 64% 46%);
+    font-size: 100px;
+    font-weight: 600;
+  }
   .num-p {
     font-size: 80%;
   }
