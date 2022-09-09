@@ -66,6 +66,8 @@ nav {
   color: rgb(255, 255, 255);
   font-size: 15px;
   margin-top: -35px;
+  margin-left: -5px;
+  margin-right: -5px;
   border: none;
   cursor: pointer;
   font-weight: 500;
@@ -2629,9 +2631,10 @@ ul li a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 28px;
+  padding: 0px;
   font-size: 15px;
   font-weight: 500;
+  margin-bottom: 10px;
 }
 
 
@@ -2680,7 +2683,7 @@ a:hover
   position: absolute;
   /* overflow: hidden; */
   top: 10px;
-  right: 45px;
+  right: 10px;
   z-index: 1;
   -webkit-user-select: none;
   user-select: none;
@@ -2698,8 +2701,8 @@ a:hover
   
   cursor: pointer;
   
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
+  opacity: 0;
+  z-index: 2; 
   
   -webkit-touch-callout: none;
 }
@@ -2768,20 +2771,17 @@ a:hover
 #menu
 {
   position: absolute;
-  width: 400px;
-  margin: -80px 0 0 0;
+  width: 360px;
+  margin: -40px 7px 0 0;
   padding: 50px;
-  padding-top: 125px;
-  right: -55px;
+  padding-top: 15px;
+  right: -7px;
   float: right;
   background: #000000;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-  
   transform-origin: 0% 0%;
   transform: translate(100%, 0);
-  
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 span#menu
@@ -2863,17 +2863,17 @@ ul#menu
   }
 
   .title {
-    font-size: 25px !important;
+    font-size: 24px !important;
     font-weight: 500;
     padding-top: 10px;
     color: rgb(255, 255, 255);
     margin-left: 0px;
-    margin-top: -30px;
+    /* margin-top: -100px; */
   }
   .rocket {
-    font-size: 26px;
+    font-size: 24px;
     color: hsl(87deg 64% 46%);
-    margin-left: 0px;
+    margin-left: 5px;
   }
   .green-button {
     text-align: center;
@@ -2918,7 +2918,7 @@ ul#menu
   .work-row {
     display: flex;
     flex-direction: column;
-    text-align: center !important;
+    /* text-align: center !important; */
     /* justify-content: center !important; */
   }
 
@@ -2985,7 +2985,7 @@ ul#menu
 
   .photo-img {
     height: auto;
-    width: 280px;
+    width: 325px;
     border-radius: 2%;
 }
   .photo-text {
@@ -3044,7 +3044,7 @@ ul#menu
 
   .project-btn {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center !important;
   }
 
@@ -3054,15 +3054,15 @@ ul#menu
 
   .button {
     background-color: rgb(255, 255, 255);
-    padding-top: 7px;
-    padding-bottom: 7px;
-    padding-right: 17px;
-    padding-left: 17px;
-    margin-top: 40px;
-    width: 150px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 10px;
+    /* width: 150px; */
     font-weight: 600;
     color: rgb(0, 0, 0);
-    font-size: 13px !important;
+    font-size: 11px !important;
     text-decoration: none;
     /* margin-right: 20px; */
   }
@@ -3075,13 +3075,13 @@ ul#menu
   .button-active {
     color: rgb(255, 255, 255);
     background-color: hsl(87deg 64% 46%);
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     padding-right: 15px;
     padding-left: 15px;
-    margin-top: 20px;
+    margin-right: 10px;
     font-weight: 600;
-    font-size: 13px !important;
+    font-size: 11px !important;
     text-decoration: none;
     font-weight: 600;
   }
@@ -3108,7 +3108,7 @@ ul#menu
     border-radius: 3%;
     margin-bottom: 20px;
     width: 310px;
-    height: 240px;
+    height: auto;
   }
 
   .project-hed1 {
@@ -3119,7 +3119,8 @@ ul#menu
 
   .carousel {
     text-align: center;
-    margin-top: 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 
   .icon1 {
@@ -3141,7 +3142,8 @@ ul#menu
     /* margin-top: 10px; */
     margin-right: 70px;
     margin-left: 70px;
-    padding-top: 70px;
+    padding-top: 20px;
+    margin-top: 30px;
   }
 
   .inner-carosel {
@@ -3152,14 +3154,15 @@ ul#menu
     border-radius: 50%;
     height: 60px;
     width: 60px;
-    margin-top: 10px;
+    margin-top: 0px;
+    margin-bottom: 20px;
   }
 
   .carosel-p {
-    margin-top: 20px;
+    margin-top: 0px;
     font-style: italic;
     color: hsl(204deg 2% 45%);
-    font-size: 8px;
+    font-size: 9px;
   }
 
   .carosel-p1 {
@@ -3183,17 +3186,21 @@ ul#menu
   }
   .number {
     background-color: hsl(220deg 60% 98%);
+    justify-content: center;
+    margin-top: -30px;
   
   }
   .num-row {
     display: flex;
     flex-direction: column;
+    margin: 0px;
     justify-content: center;
-    margin-left: 50px;
+    /* margin-left: 0px;
+    margin-right: 0px; */
   }
   
   .num-col {
-    margin-right: 70px;
+    margin: 0px;
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -3518,7 +3525,7 @@ ul#menu
     font-weight: 700;
     color: hsl(218deg 12% 65%);
     
-    /* margin-left: 70px; */
+    margin-left: 0px;
     /* color: red; */
   }
   
@@ -3533,6 +3540,7 @@ ul#menu
     margin-top: 20px;
     margin-left: -10px;
     width: 100%;
+    padding: 0px;
   }
   
   .p7 {
