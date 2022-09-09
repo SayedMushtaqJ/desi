@@ -677,11 +677,19 @@ ul li a:hover {
 /* form end  */
 
 /* footer start */
+.foot-col
+{
+  width: 30%;
+  padding: 10px;
+}
 .footer-p {
   color: hsl(251deg 8% 63%);
   font-size: 15px;
 }
+.foot-icon
+{
 
+}
 .foot-head {
   color: hsl(251deg 8% 63%);
   font-weight: 700;
@@ -691,6 +699,7 @@ ul li a:hover {
 .footer {
   background-color: hsl(254deg 32% 10%);
   padding-bottom: 20px;
+  justify-content: center !important; 
 }
 
 .footer-font {
@@ -764,9 +773,12 @@ ul li a:hover {
 .foot1 {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  padding-top: 50px;
-  margin-left: 100px;
+  justify-content: space-around;
+  padding-top: 100px;
+  padding-left: 80px;
+  padding-bottom: 40px;
+  /* padding-right: 60px; */
+  /* margin-left: 200px; */
 }
 
 .foothead {
@@ -780,20 +792,16 @@ ul li a:hover {
   color: hsl(218deg 12% 65%);
   font-size: 15px;
   margin-top: 20px;
-  margin-right: 150px;
+  margin-right: 140px;
 }
 
-.foot-col {
-  margin-right: 150px;
-  margin-top: 60px;
-}
+
 
 .p7 {
   color: hsl(251deg 8% 63%);
   text-align: center;
-  margin-top: 60px;
   font-size: 15px;
-
+  line-height: 30px;
 }
 
 /* footer ends */
@@ -1842,6 +1850,7 @@ ul li a:hover {
   .foot-col {
     margin-right: 100px;
     margin-top: 50px;
+    width: 90%;
   }
 
   .p7 {
@@ -2092,7 +2101,7 @@ ul li a:hover {
   }
 
   .cam-div {
-    padding: 10px;
+    padding: 30px;
   }
 
   .cam-h {
@@ -2554,8 +2563,10 @@ ul li a:hover {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 40px;
-    margin-left: 80px;
+    padding-top: 10px;
+    margin-left: 70px;
+    margin-bottom: 10px;
+    padding-bottom: 0px;
   }
 
   .foothead {
@@ -2572,8 +2583,10 @@ ul li a:hover {
   }
 
   .foot-col {
-    margin-right: 80px;
+    margin-right: 60px;
     margin-top: 50px;
+    width: 100%;
+    margin-bottom: 10px;
   }
 
   .p7 {
@@ -2906,10 +2919,11 @@ ul#menu
     display: flex;
     flex-direction: column;
     text-align: center !important;
+    /* justify-content: center !important; */
   }
 
   .work {
-    /* margin-top: 30px; */
+   justify-content:start;
   }
 
   .work-img {
@@ -3040,11 +3054,12 @@ ul#menu
 
   .button {
     background-color: rgb(255, 255, 255);
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 17px;
+    padding-left: 17px;
     margin-top: 40px;
+    width: 150px;
     font-weight: 600;
     color: rgb(0, 0, 0);
     font-size: 13px !important;
@@ -3416,7 +3431,8 @@ ul#menu
   
   .footer {
     background-color: hsl(254deg 32% 10%);
-    padding-bottom: 10px;
+    
+    justify-content: center;
   }
   
   .footer-font {
@@ -3490,14 +3506,18 @@ ul#menu
   .foot1 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding-top: 50px;
+    justify-content: center !important;
+    padding-bottom: 10px;
+    padding-right: 0px;
+    padding-left: 50px;
+    padding-top: 10px;
     /* margin-left: 100px; */
   }
   
   .foothead {
     font-weight: 700;
     color: hsl(218deg 12% 65%);
+    
     /* margin-left: 70px; */
     /* color: red; */
   }
@@ -3509,9 +3529,10 @@ ul#menu
   }
   
   .foot-col {
-    margin-right: 20px;
+    /* margin-right: 20px; */
     margin-top: 20px;
     margin-left: -10px;
+    width: 100%;
   }
   
   .p7 {
