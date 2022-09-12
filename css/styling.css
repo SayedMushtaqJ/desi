@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&family=Poppins:ital,wght@0,300;0,400;0,600;0,900;1,500;1,700&display=swap');
 
+
 /* nav start */
 body {
   margin: 0;
@@ -679,9 +680,117 @@ ul li a:hover {
   text-decoration: none;
   font-weight: 600;
   font-size: 53px;
+}.form__header {
+  font-family: 'Maven Pro', sans-serif;
+  background: #65449B;
+  color: white;
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+.form__field__error {
+  color: #ff4d4d;
+  margin: .25rem 0;
+  font-size: .8rem;
+  transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  max-height: 0;
+  opacity: 0;
+}
+
+.form__button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form__content {
+  padding: 2rem;
+}
+
+.form__field {
+  position: relative;
+  margin: 0 0 0.05rem;
+  width: 100%;
+}
+
+.form__field__label {
+  position: absolute;
+  z-index: 0;
+  top: .35rem;
+  transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 
+.form__field__state-icon {
+  position: absolute;
+  width: 1.5rem;
+  height: 30px;
+  right: .5rem;
+  top: .25rem;
+  background-repeat: no-repeat;
+}
+
+.form:invalid {
+  border-bottom: 1px solid #ff4d4d;
+}
+
+.form:placeholder-shown {
+  border-bottom: none;
+}
+
+.form:-ms-input-placeholder {
+  border-bottom: 1px solid #65449B;
+}
+
+.form:focus {
+  outline: none;
+}
+
+.form:valid ~ .form__field__state-icon {
+  background-image: url(https://bedekodzic.pl/wp-content/uploads/2019/05/success.svg);
+}
+
+.form:invalid ~ .form__field__state-icon {
+  background-image: url(https://bedekodzic.pl/wp-content/uploads/2019/05/error.svg);
+}
+.form:placeholder-shown ~ .form__field__state-icon {
+  background-image: url();
+}
+
+.form:-ms-input-placeholder ~ .form__field__state-icon {
+  background-image: url();
+}
+
+.form:invalid ~ .form__field__error {
+  max-height: 40px;
+  opacity: 1;
+}
+.form:placeholder-shown ~ .form__field__error {
+  max-height: 0;
+  opacity: 0;
+}
+
+.form:-ms-input-placeholder ~ .form__field__error {
+  max-height: 0;
+  opacity: 0;
+}
+
+.form:focus + .form__field__label,
+.form:valid + .form__field__label,
+.form:invalid + .form__field__label {
+  top: -.5rem;
+  font-size: .6rem;
+}
+
+.form:placeholder-shown + .form__field__label {
+  top: .35rem;
+  font-size: 1rem;
+}
+
+.form:-ms-input-placeholder + .form__field__label {
+  top: .35rem;
+  font-size: 1rem;
+}
 /* form end  */
 
 /* footer start */
@@ -3400,7 +3509,7 @@ ul li a:hover {
     background-color: hsl(209deg 23% 21%);
     color: rgb(255, 255, 255);
     height: 45px;
-    width: 350px;
+    width: 330px;
     margin-bottom: 10px;
     padding-left: 30px;
     border-radius: 8px;
@@ -3415,7 +3524,7 @@ ul li a:hover {
     color: rgb(255, 255, 255);
     /* font-weight: 600; */
     height: 230px;
-    width: 350px;
+    width: 330px;
     border-radius: 8px;
     padding-left: 30px;
     padding-top: 20px;
