@@ -685,14 +685,14 @@ ul li a:hover {
   background: #65449B;
   color: white;
   margin: 0;
-  padding: 1rem;
+  padding: 0.5rem;
   text-align: center;
 }
 
 .form__field__error {
   color: #ff4d4d;
-  margin: .25rem 0;
-  font-size: .8rem;
+  margin: .010rem 0;
+  font-size: 1rem;
   transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
   max-height: 0;
   opacity: 0;
@@ -709,7 +709,7 @@ ul li a:hover {
 
 .form__field {
   position: relative;
-  margin: 0 0 0.05rem;
+  margin: 0 0 0.01rem;
   width: 100%;
 }
 
@@ -731,7 +731,7 @@ ul li a:hover {
 }
 
 .form:invalid {
-  border-bottom: 1px solid #ff4d4d;
+  border: transparent;
 }
 
 .form:placeholder-shown {
@@ -804,7 +804,7 @@ ul li a:hover {
   font-size: 15px;
 }
 
-.foot-icon {}
+/* .foot-icon {} */
 
 .foot-head {
   color: hsl(251deg 8% 63%);
