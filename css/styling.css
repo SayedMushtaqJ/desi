@@ -680,7 +680,8 @@ ul li a:hover {
   text-decoration: none;
   font-weight: 600;
   font-size: 53px;
-}.form__header {
+}
+.form__header {
   font-family: 'Maven Pro', sans-serif;
   background: #65449B;
   color: white;
@@ -692,7 +693,8 @@ ul li a:hover {
 .form__field__error {
   color: #ff4d4d;
   margin: .010rem 0;
-  font-size: 1rem;
+  font-size: 17px;
+  font-weight: 600;
   transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
   max-height: 0;
   opacity: 0;
@@ -717,6 +719,7 @@ ul li a:hover {
   position: absolute;
   z-index: 0;
   top: .35rem;
+  margin-left: 0px;
   transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
@@ -725,17 +728,18 @@ ul li a:hover {
   position: absolute;
   width: 1.5rem;
   height: 30px;
-  right: .5rem;
-  top: .25rem;
+  right: 16rem;
+  top: .75rem;
+  /* margin-right: 200px; */
   background-repeat: no-repeat;
 }
 
 .form:invalid {
-  border: transparent;
+  border: 1px solid #ff4d4d;
 }
 
 .form:placeholder-shown {
-  border-bottom: none;
+  border: transparent;
 }
 
 .form:-ms-input-placeholder {
@@ -768,8 +772,8 @@ ul li a:hover {
 .form:placeholder-shown ~ .form__field__error {
   max-height: 0;
   opacity: 0;
+  /* border-color: 1px solid red; */
 }
-
 .form:-ms-input-placeholder ~ .form__field__error {
   max-height: 0;
   opacity: 0;
@@ -790,6 +794,12 @@ ul li a:hover {
 .form:-ms-input-placeholder + .form__field__label {
   top: .35rem;
   font-size: 1rem;
+}
+.error
+{
+  color: red;
+  font-weight: 600;
+  font-size: 16px;
 }
 /* form end  */
 
@@ -1241,6 +1251,16 @@ ul li a:hover {
     font-weight: 600;
     font-size: 16px;
   }
+  
+.form__field__state-icon {
+  position: absolute;
+  width: 1.5rem;
+  height: 30px;
+  right: 12rem;
+  top: .75rem;
+  /* margin-right: 200px; */
+  background-repeat: no-repeat;
+}
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1984,7 +2004,16 @@ ul li a:hover {
     font-size: 15px;
     line-height: 40px;
   }
-
+  
+.form__field__state-icon {
+  position: absolute;
+  width: 1.5rem;
+  height: 30px;
+  right: 6rem;
+  top: .75rem;
+  /* margin-right: 200px; */
+  background-repeat: no-repeat;
+}
   .checkbox {
     display: none;
   }
@@ -2722,7 +2751,25 @@ ul li a:hover {
     font-size: 13px;
 
   }
-
+  .form__field__state-icon {
+    position: absolute;
+    width: 1.5rem;
+    height: 30px;
+    right: 5rem;
+    top: .75rem;
+    /* margin-right: 200px; */
+    background-repeat: no-repeat;
+  }
+   
+.form__field__error {
+  color: #ff4d4d;
+  margin: .010rem 0;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  max-height: 0;
+  opacity: 0;
+} 
   .checkbox {
     display: none;
   }
@@ -2764,11 +2811,17 @@ ul li a:hover {
   li .face {
     display: none;
   }
-
+  .fb-li
+  {
+    display: none;
+  }
   li .twit {
     display: none;
   }
-
+  .twitter-li
+  {
+    display: none;
+  }
   .topnav {
     overflow: hidden;
     background-color: transparent;
@@ -2892,9 +2945,9 @@ ul li a:hover {
   #menu {
     position: absolute;
     width: 360px;
-    margin: -40px 7px 10px 10px;
-    padding-bottom: 10px;
-    padding-top: 15px;
+    margin: -35px 10px 10px 10px;
+    padding-bottom: -15px;
+    padding-top: 19px;
     right: -7px;
     float: right;
     background: #666565;
@@ -2910,8 +2963,10 @@ ul li a:hover {
   }
 
   #menu li {
-    padding: 10px 0;
+    padding-bottom: 3px;
+    padding-top: 3px;
     font-size: 22px;
+    /* line-height: 23px */
 
   }
 
@@ -2928,7 +2983,8 @@ ul li a:hover {
   .dropbtn {
     background-color: transparent;
     color: white;
-    /* padding: 10px 10px; */
+    margin-top: 11px;
+    margin-bottom: 11px;
     font-size: 22px;
     border: none;
     text-align: center !important;
@@ -2940,6 +2996,7 @@ ul li a:hover {
     position: relative;
     display: inline-block;
     width: 100%;
+    justify-content: center !important;
   }
 
   .nav-dropbtn {
@@ -2954,14 +3011,18 @@ ul li a:hover {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    text-align: center;
+    justify-content: center;
+    margin-left: 110px;
+    margin-top: -10px;
   }
 
   .dropdown-content a {
     color: black;
-    padding: 12px 16px;
+    padding: 10px 11px;
     text-decoration: none;
     display: block;
+    font-size: 14px;
+    text-align: center;
   }
 
   .dropdown-content a:hover {
@@ -3678,5 +3739,24 @@ ul li a:hover {
     font-size: 13px;
 
   }
+  .form__field__state-icon {
+    position: absolute;
+    width: 1.5rem;
+    height: 30px;
+    right: 1rem;
+    top: .75rem;
+    /* margin-right: 200px; */
+    background-repeat: no-repeat;
+  }
+   
+.form__field__error {
+  color: #ff4d4d;
+  margin: .010rem 0;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  max-height: 0;
+  opacity: 0;
+} 
 
 }
