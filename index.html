@@ -35,8 +35,8 @@
                     <span></span>
                     <ul id="menu">
                         <li><a href="#about" class="active-title">Home</a></li>
-                        <li><a href="#contact">Services</a></li>
-                        <li><a href="#news">Project</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#project">Project</a></li>
                         <li class="dropdown">
                             <div class="nav-dropbtn">
                                 <button class="dropbtn">Drop <i class="fa-solid fa-caret-down drop-icon"></i></button>
@@ -47,7 +47,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li><a href="#news">Contact</a></li>
+                        <li><a href="#contact">Contact</a></li>
                         <li class="fb-li"><a href="#"><i class="fa-brands fa-facebook-f face"></i></a></li>
                         <li><a href="#" class="twitter-li"><i class="fa-brands fa-twitter twit"></i></a></li>
                     </ul>
@@ -63,7 +63,7 @@
         </div>
     </header>
 
-    <div class="media">
+    <div class="media" id="services">
         <h2 class="media1">Complete social media services</h2>
         <p class="media-p">Increasing impression intrestedexpressionhe my at. Respect invited request charmed me<br>
             warrant to .Expect no more pretty as do through so genius afride through .
@@ -159,7 +159,7 @@
             </td>
         </tr>
     </table>
-    <div class="project">
+    <div id="project" class="project">
         <h2 class="project-hed">Projects That We're Proude Of</h2>
 
         <div class="project-btn">
@@ -259,7 +259,7 @@
         </div>
     </div>
 
-    <div class="form1">
+    <div id="contact" class="form1">
         <video class="vedioheader1" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
             <source src="img/header-background-video.mp4" type="video/mp4">
         </video>
@@ -278,38 +278,42 @@
                             class="fa-solid fa-envelope"></i></a></span>
                 company@gmail.com
             </p>
-            <form id="signup-form" action="yourUrl">
+           
+                <form id="signup-form" action="yourUrl">
 
-                <div class="form__content">
-                    <div class="form__field">
-                        <input id="test" type="text" class="form" name="firstName" placeholder="Name" pattern="[A-Za-z' ']{2,99}"
-                            required><br>
+                    <div class="form__content">
+                        <div class="form__field">
+                            <input id="test" type="text" class="form" name="firstName" placeholder="Name"
+                                pattern="[A-Za-z' ']{2,99}" required><br>
                             <span class="error" id="demo"></span>
-                            
+
                             <div class="form__field__state-icon"></div>
-                        <label for="" class="form__field__label"></label>
-                        <p class="form__field__error">your name must not contain numbers and must have min two letters !</p>
-                        
-                    </div>
-                    <div class="form__field">
-                        <input id="test2" type="email" pattern="[a-zA-Z0-9-]{3,}@[a-zA-Z0-9-]{3,}[.]{1}[a-zA-Z]{3,}" class="form"
-                            placeholder="Email" required><br>
-                            <span class="error" id="demo2"></span>
-                            
                             <label for="" class="form__field__label"></label>
-                        <p class="form__field__error">Must have [@] and satisfy mail name condition</p>
-                        <div class="form__field__state-icon"></div>
-                    </div>
-                    <textarea  cols="20" rows="40" class="message" name="lastname" id="test3" placeholder="Message"
-                        required></textarea><br>
+                            <p class="form__field__error">your name must not contain numbers and must have min two
+                                letters !</p>
+
+                        </div>
+                        <div class="form__field">
+                            <input id="test2" type="email" pattern="[a-zA-Z0-9-]{3,}@[a-zA-Z0-9-]{3,}[.]{1}[a-zA-Z]{3,}"
+                                class="form" placeholder="Email" required><br>
+                            <span class="error" id="demo2"></span>
+
+                            <label for="" class="form__field__label"></label>
+                            <p class="form__field__error">Must have [@] and satisfy mail name condition</p>
+                            <div class="form__field__state-icon"></div>
+                        </div>
+                        <textarea cols="20" rows="40" class="message" name="lastname" id="test3" placeholder="Message"
+                            required></textarea><br>
                         <span class="error" id="demo3"></span>
                         <span id="demo4" class="error"></span>
-                    <!-- <button class="button1"><a href="#" aria-required="reqired">Submit</a></button> -->
-                    <div>
-                        <button onclick="formCheck(); return false;" type="submit" class="button1" name="submit">Submit</button>
+                        <!-- <button class="button1"><a href="#" aria-required="reqired">Submit</a></button> -->
+                        <div>
+                            <button onclick="formCheck(); return false;" type="submit" class="button1"
+                                name="submit">Submit</button>
+                        </div>
                     </div>
-                </div>
-            </form>
+                </form>
+            
         </div>
     </div>
     <div class="footer">
@@ -418,35 +422,34 @@
     </script>
     <script>
         function formCheck() {
-            
 
- if (document.getElementById('test').value == "" ) {
-   document.getElementById('test').style.border = "2px solid #ff4500";
-   document.getElementById('demo').innerHTML  = "*Name is missing!";
- } 
- else{
-    document.getElementById('test').style.border = "none";
-    document.getElementById('demo').innerHTML  = "";
- }
 
-  if(document.getElementById('test2').value == "" ){
-    document.getElementById('test2').style.border = "2px solid #ff4500";
-    document.getElementById('demo2').innerHTML  = "*Email is missing!";
- }else{
-    document.getElementById('test2').style.border = "none";
-    document.getElementById('demo2').innerHTML  = "";
- }
+            if (document.getElementById('test').value == "") {
+                document.getElementById('test').style.border = "2px solid #ff4500";
+                document.getElementById('demo').innerHTML = "*Name is missing!";
+            }
+            else {
+                document.getElementById('test').style.border = "none";
+                document.getElementById('demo').innerHTML = "";
+            }
 
-  if(document.getElementById('test3').value == "" )
- {
-    document.getElementById('test3').style.border = "2px solid #ff4500";
-    document.getElementById('demo3').innerHTML  = "*Message is missing!";
- }else{
-    document.getElementById('test3').style.border = "none";
-    document.getElementById('demo3').innerHTML  = "";
- }
- 
-}
+            if (document.getElementById('test2').value == "") {
+                document.getElementById('test2').style.border = "2px solid #ff4500";
+                document.getElementById('demo2').innerHTML = "*Email is missing!";
+            } else {
+                document.getElementById('test2').style.border = "none";
+                document.getElementById('demo2').innerHTML = "";
+            }
+
+            if (document.getElementById('test3').value == "") {
+                document.getElementById('test3').style.border = "2px solid #ff4500";
+                document.getElementById('demo3').innerHTML = "*Message is missing!";
+            } else {
+                document.getElementById('test3').style.border = "none";
+                document.getElementById('demo3').innerHTML = "";
+            }
+
+        }
 
     </script>
 
